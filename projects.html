@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>프로젝트 · 신지훈</title>
+  <meta name="description" content="신지훈의 연구과제 및 수행 프로젝트.">
+  <meta name="author" content="Jihun Shin">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="프로젝트 · 신지훈">
+  <meta property="og:description" content="Research projects by Jihun Shin.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="projects">
+  <div id="progress-bar" aria-hidden="true"><div id="progress-fill"></div></div>
+
+  <header class="site-header">
+    <div class="site-nav">
+      <a class="site-name" href="index.html" aria-label="Jihun Shin home">Jihun Shin</a>
+      <nav class="nav-links" aria-label="주요 메뉴">
+        <a href="index.html" data-i18n="navAbout">소개</a>
+        <a class="active" href="projects.html" aria-current="page" data-i18n="navProjects">프로젝트</a>
+        <a href="publications.html" data-i18n="navPublications">출판</a>
+      </nav>
+      <div class="lang-toggle" aria-label="언어 선택">
+        <button type="button" class="active" data-lang="ko" aria-pressed="true">KR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main subpage-main">
+    <header class="page-intro reveal">
+      <p class="eyebrow">Project</p>
+      <h1 data-i18n="projectsPageTitle">프로젝트</h1>
+      <p data-i18n="projectsPageIntro">연구과제 · 수행 프로젝트</p>
+    </header>
+
+    <section class="empty-state reveal" aria-labelledby="empty-title">
+      <div class="mint-spectrum large" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="empty-kicker">PROJECT ARCHIVE</p>
+      <h2 id="empty-title" data-i18n="projectsComingTitle">프로젝트 정보 준비 중</h2>
+      <p data-i18n="projectsPageEmpty">세부 정보 업데이트 예정</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span data-current-year>2026</span> Jihun Shin</p>
+    <p>Template adapted from <a href="https://pointcloudyc.github.io/" target="_blank" rel="noreferrer">Chao Yin</a>.</p>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="맨 위로">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg>
+  </button>
+</body>
+</html>
