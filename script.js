@@ -16,7 +16,7 @@ const translations = {
     bioLabAt: '에서',
     advisorName: '심창수 교수님',
     bioAdvisor: '의 지도를 받고 있습니다.',
-    bioResearch: 'AI와 디지털 트윈을 활용해 오래된 교량의 손상을 정량화하고, 점검 기록을 유지관리 의사결정에 활용할 수 있는 데이터로 변환하는 연구를 수행합니다.',
+    bioResearch: 'AI와 디지털 트윈을 활용해 노후교량의 손상을 정량화하고, 점검 기록을 유지관리 의사결정에 활용할 수 있는 데이터로 변환하는 연구를 수행합니다.',
     newsTitle: '최근 소식',
     news2026: '논문 “Mechanical degradation of naturally corroded rebars from a 45-year-old bridge slab: 3D quantification of section loss and a new corrosion damage indicator”이',
     newsEdge: '논문 “Edge-aware transformer-based damage segmentation framework for bridge inspection maps using synthetic data”가',
