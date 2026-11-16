@@ -15,6 +15,10 @@
   {"@context":"https://schema.org","@type":"Person","name":"Jihun Shin","alternateName":"신지훈","jobTitle":"Ph.D. Student","email":"jihunshin@cau.ac.kr","affiliation":{"@type":"CollegeOrUniversity","name":"Chung-Ang University"}}
   </script>
   <script src="script.js" defer></script>
+  <script type="importmap">
+  {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+  </script>
+  <script type="module" src="models.js"></script>
 </head>
 <body data-page="home">
   <div id="progress-bar" aria-hidden="true"><div id="progress-fill"></div></div>
@@ -56,6 +60,20 @@
       </div>
       <div class="profile-photo-wrap">
         <img class="profile-photo" src="assets/image/jhshin.jpeg" alt="신지훈 프로필 사진">
+      </div>
+    </section>
+
+    <section class="content-section reveal" aria-label="BIM models">
+      <div class="model-grid">
+        <figure class="model-card">
+          <div class="model-stage" data-model="assets/models/girder.glb" data-colors="#b4b2ac"><canvas aria-label="Girder 3D model"></canvas></div>
+        </figure>
+        <figure class="model-card">
+          <div class="model-stage" data-model="assets/models/slab.glb" data-colors="#c3c1bb,#8b5a3c,#6e7276,#a0703f,#5d6165"><canvas aria-label="Slab 3D model"></canvas></div>
+        </figure>
+        <figure class="model-card">
+          <div class="model-stage" data-model="assets/models/pier.glb" data-colors="#bdbab3,#a6a39c,#8f8d87"><canvas aria-label="Pier 3D model"></canvas></div>
+        </figure>
       </div>
     </section>
 

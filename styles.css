@@ -427,6 +427,66 @@ html[lang="ko"] .nav-links a {
 .mint-spectrum span:nth-child(2) { background: var(--mint-mid); }
 .mint-spectrum span:nth-child(3) { background: var(--mint-bright); }
 
+/* BIM model turntables */
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.model-card {
+  margin: 0;
+}
+
+.model-stage {
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.model-stage canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.model-stage canvas:active {
+  cursor: grabbing;
+}
+
+.model-stage::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  border: 2px solid var(--line);
+  border-top-color: var(--mint-deep);
+  border-radius: 50%;
+  animation: model-spin 0.9s linear infinite;
+  pointer-events: none;
+}
+
+.model-stage.is-loaded::after,
+.model-stage.is-error::after {
+  display: none;
+}
+
+@keyframes model-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 720px) {
+  .model-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
+
 /* Publication cards */
 .publication-list {
   display: grid;
